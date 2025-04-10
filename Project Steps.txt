@@ -1,0 +1,11 @@
+1) Create Repo on Github
+2) Clone it on your local system
+3) open cloned repository in VS code
+4) Create src Folder
+	Create Utils
+	Create TrainingPipeline Folder
+		1) Data ingestion
+		2) Data Cleaning(Eda)
+		3) Outlier removal
+		4) Encoding and scalling
+		5) Model Training

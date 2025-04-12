@@ -106,8 +106,10 @@ class MLflowLoggerClass:
         # mlflow.set_tracking_uri("https://dagshub.com/SHIVRAJSHINDE/AirlineFare_EndToEnd.mlflow")        
 
 
-        mlflow.set_tracking_uri("https://dagshub.com/SHIVRAJSHINDE/AirlineFare_EndToEnd.mlflow")
-        dagshub.init(repo_owner='SHIVRAJSHINDE', repo_name='AirlineFare_EndToEnd', mlflow=True)
+        #mlflow.set_tracking_uri("https://dagshub.com/SHIVRAJSHINDE/AirlineFare_EndToEnd.mlflow")
+
+        mlflow.set_tracking_uri("https://dagshub.com/SHIVRAJSHINDE/CU_Airfare_Prediction01.mlflow")
+        dagshub.init(repo_owner='SHIVRAJSHINDE', repo_name='CU_Airfare_Prediction01', mlflow=True)
 
         # self.tracking_uri = "http://localhost:5000"
         # mlflow.set_tracking_uri(self.tracking_uri)

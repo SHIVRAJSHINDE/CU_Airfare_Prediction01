@@ -10,12 +10,9 @@ airlineQuartile :
   Trujet: [0.00, 0.00] 
 
 
-
-
-
 trainTestSplit:
-  testSize: 0.30
-  randomState: 42
+  testSize: 0.35
+  randomState: 36
   CrossValidation: 5
 
 

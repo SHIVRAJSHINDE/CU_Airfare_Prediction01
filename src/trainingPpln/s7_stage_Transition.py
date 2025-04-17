@@ -70,7 +70,7 @@ class ModelManager:
             self.client.transition_model_version_stage(
                 name=self.model_name,
                 version=model_version,
-                stage="Production",
+                stage="Staging",
                 archive_existing_versions=True
             )
 

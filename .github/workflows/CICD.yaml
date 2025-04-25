@@ -1,0 +1,27 @@
+name: CI Pipeline
+
+on: push
+
+jobs:
+  project-testing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout code  # uploading the code
+        uses: actions/checkout@v3
+
+      - name: setup python   # Installing the python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.11.7'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install dvc mlflow  # Install DVC and MLflow explicitly if not in requirements.txt
+
+      - name: Run DVC-Repro
+        run: | 
+          dvc repro
+
+          
